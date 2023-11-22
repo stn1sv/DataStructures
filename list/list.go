@@ -179,6 +179,7 @@ func (l *List[T]) PopBack() T {
 		v := l.head.data
 		l.head = nil
 		l.tail = nil
+		l.length--
 		return v
 	}
 
